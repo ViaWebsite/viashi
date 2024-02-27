@@ -1,0 +1,265 @@
+<!DOCTYPE html> <!-- define the document type as HTML5-->
+<html lang="en"> <!-- specify the language of the document-->
+<head>
+    <meta charset="UTF-8"> <!-- set character encoding to UTF-8 for universal compatibility-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- configure viewport settings for responsive design-->
+    <title>My Personal Home Page</title> <!--set the title of the webpaage-->
+    <style> 
+        /* General styles for the entire body */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: #f5f5f5; /* Light grey background */
+            color: #333; /* Default text color */
+        } 
+
+        /* Container for central alignment */
+     .container {
+            width: 90%; /* Set width to 90% of the viewport */
+            margin: 0 auto; /* Center align the container */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+            padding: 20px 0; /* Padding for top and bottom */
+            text-align: center; /* Center align text */
+        }
+
+        /* Header title styles */
+        header h1 {
+            margin: 0; /* Remove margin */
+            font-size: 36px; /* Large font size */
+            font-weight: bold; /* Bold font weight */
+            text-transform: uppercase; /* Convert text to uppercase */
+        }
+
+        /* Styles for the profile image */
+        .header-image {
+            margin-top: 20px; /* Margin for spacing */
+        }
+
+        .header-image img {
+            width: 150px; /* Set image width */
+            height: 150px; /* Set image height */
+            border-radius: 50%; /* Rounded border */
+            border: 5px solid #fff; /* White border */
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #666; /* Dark background color */
+            padding: 10px 0; /* Padding for top and bottom */
+            text-align: center; /* Center align text */
+        }
+
+        nav a {
+            color: #fff; /* White text color */
+            text-decoration: none; /* Remove default underline */
+            margin: 0 20px; /* Margin between navigation links */
+            font-size: 18px; /* Font size for navigation links */
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Section styles */
+        section {
+            padding: 40px 0; /* Padding for top and bottom */
+            background-color: #d1d1e0; /* Lavender grey background color */
+        }
+
+        section h2 {
+            margin-bottom: 20px; /* Margin for bottom */
+            text-align: center; /* Center align text */
+            font-size: 24px; /* Large font size */
+            color: #333; /* Default text color */
+        }
+
+        ul {
+            list-style-type: none; /* Remove default list style */
+            padding: 0; /* Remove default padding */
+        }
+
+        li {
+            margin-bottom: 10px; /* Margin for bottom */
+            font-size: 18px; /* Font size for list items */
+        }
+
+        p {
+            font-size: 18px; /* Font size for paragraphs */
+            color: #555; /* Darker grey text color */
+        }
+
+        /* Additional styles for content sections */
+        .content-container {
+            display: grid; /* Use CSS grid for layout */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+            grid-gap: 20px; /* Gap between grid items */
+            text-align: center; /* Center align text */
+        }
+
+        .content-item {
+            background-color: #fff; /* White background color for content items */
+            padding: 20px; /* Padding for content items */
+            border-radius: 8px; /* Rounded borders */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            color: #333; /* Default text color */
+        }
+
+        .content-item h3 {
+            margin-bottom: 10px; /* Margin for bottom */
+            color: #009688; /* Dark cyan color for headings */
+            font-weight: bold; /* Bold font weight */
+        }
+
+        .content-item p {
+            color: #777; /* Light grey text color */
+        }
+
+        /* Background color for specific sections */
+        #about, #skills, #education, #contacts {
+            background-color: #d1d1e0; /* Lavender grey background color */
+        }
+
+        /* Contacts styles */
+        #contacts p a {
+            color: #7b68ee; /* Blue-violet text color for contact links */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <h1>Via Vinus B. Umali</h1> <!-- Main heading for the page -->
+            <div class="header-image">
+                <img src="d:\picture.jpg" alt="Profile Picture"> <!-- Profile picture of the user -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation section -->
+    <nav>
+        <a href="#home">Home</a> <!-- Navigation link to the home section -->
+        <a href="#about">About Me</a> <!-- Navigation link to the about me section -->
+        <a href="#skills">Skills</a> <!-- Navigation link to the skills section -->
+        <a href="#education">Education</a> <!-- Navigation link to the education section -->
+        <a href="#contacts">Contacts</a> <!-- Navigation link to the contacts section -->
+    </nav>
+
+    <!-- Home section -->
+    <section id="home">
+        <div class="container">
+            <h2>Home</h2> <!-- Heading for the home section -->
+            <p>Welcome to my website! Here you'll find information about me, my skills, my education, and my contacts.</p> <!-- Description of the home section -->
+        </div>
+    </section>
+
+    <!-- About Me section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2> <!-- Heading for the about me section -->
+            <div class="content-container"> <!-- Container for the content items -->
+
+                <!-- Content items for personal information -->
+                <div class="content-item">
+                    <h3>Name</h3>
+                    <p>Via Vinus B. Umali</p>
+                </div>
+                <div class="content-item">
+                    <h3>Age</h3>
+                    <p>20 Years Old</p>
+                </div>
+                <div class="content-item">
+                    <h3>Address</h3>
+                    <p>Tiaong, Quezon</p>
+                </div>
+                <div class="content-item">
+                    <h3>Sex</h3>
+                    <p>Female</p>
+                </div>
+                <div class="content-item">
+                    <h3>Civil Status</h3>
+                    <p>Single</p>
+                </div>
+                <div class="content-item">
+                    <h3>Religion</h3>
+                    <p>Roman Catholic</p>
+                </div>
+                <div class="content-item">
+                    <h3>Nationality</h3>
+                    <p>Filipino</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2> <!-- Heading for the skills section -->
+            <div class="content-container"> <!-- Container for the content items -->
+                <!-- Content items for skills -->
+                <div class="content-item">
+                    <h3>Java</h3>
+                </div>
+                <div class="content-item">
+                    <h3>C#</h3>
+                </div>
+                <div class="content-item">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="content-item">
+                    <h3>Python</h3>
+                </div>
+                <div class="content-item">
+                    <h3>SQL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2> <!-- Heading for the education section -->
+            <div class="content-container"> <!-- Container for the content items -->
+                <!-- Content items for education -->
+                <div class="content-item">
+                    <h3>Elementary</h3>
+                    <p>San Jose Elementary School (2011-2017) - Achiever</p>
+                </div>
+                <div class="content-item">
+                    <h3>High School</h3>
+                    <p>Recto Memorial National High School (2017-2020) - Achiever</p>
+                </div>
+                <div class="content-item">
+                    <h3>Senior High School</h3>
+                    <p>Recto Memorial National High School (2020-2022) - With Honor</p>
+                </div>
+                <div class="content-item">
+                    <h3>College</h3>
+                    <p>Laguna State Polytechnic University - Bachelor of Science in Information Technology (2022-Present)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts section -->
+    <section id="contacts">
+        <div class="container">
+            <h2>Contacts</h2> <!-- Heading for the contacts section -->
+            <!-- Contact information with clickable links -->
+            <p>Institutional Account: <a href="mailto:0322-1823@lspu.edu.ph" style="color: #7b68ee;">0322-1823@lspu.edu.ph</a></p>
+            <p>Email: <a href="mailto:viaumali24@gmail.com" style="color: #7b68ee;">viaumali24@gmail.com</a></p>
+            <p>Phone: <a href="tel:09925228674" style="color: #7b68ee;">09925228674</a></p>
+            <p>Facebook: <a href="https://web.facebook.com/?_rdc=1&_rdr" style="color: #7b68ee;">Via Umali</a></p>
+        </div>
+    </section>
+</body>
+</html>
